@@ -1,0 +1,17 @@
+D:\xinvyang\xiangmu\zuoye2\obj\Debug\net8.0-windows\zuoye2.Form1.resources
+D:\xinvyang\xiangmu\zuoye2\obj\Debug\net8.0-windows\zuoye2.Properties.Resources.resources
+D:\xinvyang\xiangmu\zuoye2\obj\Debug\net8.0-windows\zuoye2.csproj.GenerateResource.cache
+D:\xinvyang\xiangmu\zuoye2\obj\Debug\net8.0-windows\zuoye2.GeneratedMSBuildEditorConfig.editorconfig
+D:\xinvyang\xiangmu\zuoye2\obj\Debug\net8.0-windows\zuoye2.AssemblyInfoInputs.cache
+D:\xinvyang\xiangmu\zuoye2\obj\Debug\net8.0-windows\zuoye2.AssemblyInfo.cs
+D:\xinvyang\xiangmu\zuoye2\obj\Debug\net8.0-windows\zuoye2.csproj.CoreCompileInputs.cache
+D:\xinvyang\xiangmu\zuoye2\bin\Debug\net8.0-windows\zuoye2.exe
+D:\xinvyang\xiangmu\zuoye2\bin\Debug\net8.0-windows\zuoye2.deps.json
+D:\xinvyang\xiangmu\zuoye2\bin\Debug\net8.0-windows\zuoye2.runtimeconfig.json
+D:\xinvyang\xiangmu\zuoye2\bin\Debug\net8.0-windows\zuoye2.dll
+D:\xinvyang\xiangmu\zuoye2\bin\Debug\net8.0-windows\zuoye2.pdb
+D:\xinvyang\xiangmu\zuoye2\obj\Debug\net8.0-windows\zuoye2.dll
+D:\xinvyang\xiangmu\zuoye2\obj\Debug\net8.0-windows\refint\zuoye2.dll
+D:\xinvyang\xiangmu\zuoye2\obj\Debug\net8.0-windows\zuoye2.pdb
+D:\xinvyang\xiangmu\zuoye2\obj\Debug\net8.0-windows\zuoye2.genruntimeconfig.cache
+D:\xinvyang\xiangmu\zuoye2\obj\Debug\net8.0-windows\ref\zuoye2.dll

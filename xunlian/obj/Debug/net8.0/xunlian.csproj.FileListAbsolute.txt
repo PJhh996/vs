@@ -1,0 +1,14 @@
+D:\xinvyang\xiangmu\xunlian\bin\Debug\net8.0\xunlian.exe
+D:\xinvyang\xiangmu\xunlian\bin\Debug\net8.0\xunlian.deps.json
+D:\xinvyang\xiangmu\xunlian\bin\Debug\net8.0\xunlian.runtimeconfig.json
+D:\xinvyang\xiangmu\xunlian\bin\Debug\net8.0\xunlian.dll
+D:\xinvyang\xiangmu\xunlian\bin\Debug\net8.0\xunlian.pdb
+D:\xinvyang\xiangmu\xunlian\obj\Debug\net8.0\xunlian.GeneratedMSBuildEditorConfig.editorconfig
+D:\xinvyang\xiangmu\xunlian\obj\Debug\net8.0\xunlian.AssemblyInfoInputs.cache
+D:\xinvyang\xiangmu\xunlian\obj\Debug\net8.0\xunlian.AssemblyInfo.cs
+D:\xinvyang\xiangmu\xunlian\obj\Debug\net8.0\xunlian.csproj.CoreCompileInputs.cache
+D:\xinvyang\xiangmu\xunlian\obj\Debug\net8.0\xunlian.dll
+D:\xinvyang\xiangmu\xunlian\obj\Debug\net8.0\refint\xunlian.dll
+D:\xinvyang\xiangmu\xunlian\obj\Debug\net8.0\xunlian.pdb
+D:\xinvyang\xiangmu\xunlian\obj\Debug\net8.0\xunlian.genruntimeconfig.cache
+D:\xinvyang\xiangmu\xunlian\obj\Debug\net8.0\ref\xunlian.dll

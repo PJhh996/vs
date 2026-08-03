@@ -1,0 +1,7 @@
+D:\xinvyang\xiangmu\zuoye1\obj\Debug\net8.0-windows\zuoye1.Form1.resources
+D:\xinvyang\xiangmu\zuoye1\obj\Debug\net8.0-windows\zuoye1.Properties.Resources.resources
+D:\xinvyang\xiangmu\zuoye1\obj\Debug\net8.0-windows\zuoye1.csproj.GenerateResource.cache
+D:\xinvyang\xiangmu\zuoye1\obj\Debug\net8.0-windows\zuoye1.GeneratedMSBuildEditorConfig.editorconfig
+D:\xinvyang\xiangmu\zuoye1\obj\Debug\net8.0-windows\zuoye1.AssemblyInfoInputs.cache
+D:\xinvyang\xiangmu\zuoye1\obj\Debug\net8.0-windows\zuoye1.AssemblyInfo.cs
+D:\xinvyang\xiangmu\zuoye1\obj\Debug\net8.0-windows\zuoye1.csproj.CoreCompileInputs.cache
