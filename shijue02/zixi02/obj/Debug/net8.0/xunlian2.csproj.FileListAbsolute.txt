@@ -1,0 +1,15 @@
+D:\xinvyang\xiangmu\shijue02\xunlian2\bin\Debug\net8.0\xunlian2.exe
+D:\xinvyang\xiangmu\shijue02\xunlian2\bin\Debug\net8.0\xunlian2.deps.json
+D:\xinvyang\xiangmu\shijue02\xunlian2\bin\Debug\net8.0\xunlian2.runtimeconfig.json
+D:\xinvyang\xiangmu\shijue02\xunlian2\bin\Debug\net8.0\xunlian2.dll
+D:\xinvyang\xiangmu\shijue02\xunlian2\bin\Debug\net8.0\xunlian2.pdb
+D:\xinvyang\xiangmu\shijue02\xunlian2\obj\Debug\net8.0\xunlian2.GeneratedMSBuildEditorConfig.editorconfig
+D:\xinvyang\xiangmu\shijue02\xunlian2\obj\Debug\net8.0\xunlian2.AssemblyInfoInputs.cache
+D:\xinvyang\xiangmu\shijue02\xunlian2\obj\Debug\net8.0\xunlian2.AssemblyInfo.cs
+D:\xinvyang\xiangmu\shijue02\xunlian2\obj\Debug\net8.0\xunlian2.csproj.CoreCompileInputs.cache
+D:\xinvyang\xiangmu\shijue02\xunlian2\obj\Debug\net8.0\xunlian2.sourcelink.json
+D:\xinvyang\xiangmu\shijue02\xunlian2\obj\Debug\net8.0\xunlian2.dll
+D:\xinvyang\xiangmu\shijue02\xunlian2\obj\Debug\net8.0\refint\xunlian2.dll
+D:\xinvyang\xiangmu\shijue02\xunlian2\obj\Debug\net8.0\xunlian2.pdb
+D:\xinvyang\xiangmu\shijue02\xunlian2\obj\Debug\net8.0\xunlian2.genruntimeconfig.cache
+D:\xinvyang\xiangmu\shijue02\xunlian2\obj\Debug\net8.0\ref\xunlian2.dll
