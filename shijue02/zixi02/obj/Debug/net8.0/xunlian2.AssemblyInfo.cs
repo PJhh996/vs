@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("xunlian2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+29e2df2dfc83814974fe43b699af6d0a00ddee9a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7305ab2dd691fcb62ae29bbfbe4a168b517c2939")]
 [assembly: System.Reflection.AssemblyProductAttribute("xunlian2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("xunlian2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

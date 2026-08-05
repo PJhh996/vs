@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\xinvyang\\xiangmu\\shijue02\\xunlian2\\xunlian2.csproj",
+      "projectUniqueName": "D:\\xinvyang\\xiangmu\\shijue02\\zixi02\\xunlian2.csproj",
       "projectName": "xunlian2",
-      "projectPath": "D:\\xinvyang\\xiangmu\\shijue02\\xunlian2\\xunlian2.csproj",
+      "projectPath": "D:\\xinvyang\\xiangmu\\shijue02\\zixi02\\xunlian2.csproj",
       "packagesPath": "C:\\Users\\饭加含\\.nuget\\packages\\",
-      "outputPath": "D:\\xinvyang\\xiangmu\\shijue02\\xunlian2\\obj\\",
+      "outputPath": "D:\\xinvyang\\xiangmu\\shijue02\\zixi02\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\饭加含\\AppData\\Roaming\\NuGet\\NuGet.Config",
