@@ -1,0 +1,15 @@
+D:\xinvyang\xiangmu\shijue02\zixi8_06\bin\Debug\net8.0\zixi8_06.exe
+D:\xinvyang\xiangmu\shijue02\zixi8_06\bin\Debug\net8.0\zixi8_06.deps.json
+D:\xinvyang\xiangmu\shijue02\zixi8_06\bin\Debug\net8.0\zixi8_06.runtimeconfig.json
+D:\xinvyang\xiangmu\shijue02\zixi8_06\bin\Debug\net8.0\zixi8_06.dll
+D:\xinvyang\xiangmu\shijue02\zixi8_06\bin\Debug\net8.0\zixi8_06.pdb
+D:\xinvyang\xiangmu\shijue02\zixi8_06\obj\Debug\net8.0\zixi8_06.GeneratedMSBuildEditorConfig.editorconfig
+D:\xinvyang\xiangmu\shijue02\zixi8_06\obj\Debug\net8.0\zixi8_06.AssemblyInfoInputs.cache
+D:\xinvyang\xiangmu\shijue02\zixi8_06\obj\Debug\net8.0\zixi8_06.AssemblyInfo.cs
+D:\xinvyang\xiangmu\shijue02\zixi8_06\obj\Debug\net8.0\zixi8_06.csproj.CoreCompileInputs.cache
+D:\xinvyang\xiangmu\shijue02\zixi8_06\obj\Debug\net8.0\zixi8_06.sourcelink.json
+D:\xinvyang\xiangmu\shijue02\zixi8_06\obj\Debug\net8.0\zixi8_06.dll
+D:\xinvyang\xiangmu\shijue02\zixi8_06\obj\Debug\net8.0\refint\zixi8_06.dll
+D:\xinvyang\xiangmu\shijue02\zixi8_06\obj\Debug\net8.0\zixi8_06.pdb
+D:\xinvyang\xiangmu\shijue02\zixi8_06\obj\Debug\net8.0\zixi8_06.genruntimeconfig.cache
+D:\xinvyang\xiangmu\shijue02\zixi8_06\obj\Debug\net8.0\ref\zixi8_06.dll
