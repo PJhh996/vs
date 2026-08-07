@@ -117,17 +117,17 @@
             // 4! = 1 * 2 * 3 * 4
 
             //方案一
-            //int res = 0;
-            //for (int j = 1; j <= 10; j++)
-            //{    
-            //    int sum = 1;
-            //    for (int i = 1; i <= j; i++)
-            //    {
-            //        sum = sum * i;
-            //    }
-            //    res += sum;
-            //}
-            //Console.WriteLine(res);
+            int res = 0;
+            for (int j = 1; j <= 10; j++)
+            {
+                int sum = 1;
+                for (int i = 1; i <= j; i++)
+                {
+                    sum = sum * i;
+                }
+                res += sum;
+            }
+            Console.WriteLine(res);
 
             //方案二
             //int sum = 1;
