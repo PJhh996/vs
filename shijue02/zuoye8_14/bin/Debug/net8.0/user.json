@@ -1,26 +1,12 @@
-user.log：用户退出菜单，2026/8/14 20:14:46
-user.log：用户开始注册，2026/8/14 20:14:51
-user.log：用户输入用户名长度有误，注册失败，2026/8/14 20:14:51
-user.log：用户开始注册，2026/8/14 20:15:48
-user.log：{
-  "username": "jjjjjjjjj",
-  "password": "999999999",
-  "shijian": "2026-08-14T20:15:48.7867039+08:00",
-  "zhuce": "\u6CE8\u518C\u6210\u529F"
-}
-user.log：用户退出菜单，2026/8/14 20:16:24
-user.log：用户开始注册，2026/8/14 20:36:58
-user.log：{
-  "username": "hhhhhhhhh",
-  "password": "888888888",
-  "shijian": "2026-08-14T20:36:58.2715212+08:00"
-}注册成功
-user.log：用户开始登录，2026/8/14 20:37:13
-user.log：用户uuuuuuuuu登录成功，2026/8/14 20:37:13
-user.log：用户退出菜单，2026/8/14 20:37:29
-user.log：用户开始注册，2026/8/14 20:40:08
-user.log：{
-  "username": "sssssssss",
-  "password": "fffffffff"
-}注册成功2026/8/14 20:40:08
-user.log：用户退出菜单，2026/8/14 20:40:19
+[
+  {
+    "username": "user",
+    "password": "888888",
+    "dateTime": "2026/8/16 14:32:38"
+  },
+  {
+    "username": "seven",
+    "password": "777777",
+    "dateTime": "2026/8/16 14:35:54"
+  }
+]
