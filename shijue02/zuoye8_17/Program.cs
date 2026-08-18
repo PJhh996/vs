@@ -57,28 +57,40 @@ namespace zuoye8_17
                         break;
                     case "2":
                         Console.WriteLine("----删除图书----");
-
+                        Console.WriteLine("请输入删除的书名：");
+                        string bookRemove = Console.ReadLine();
+                        var removeRes = BM.RemoveBook(bookRemove);
+                        Console.WriteLine(removeRes);
                         break;
                     case "3":
                         Console.WriteLine("----编辑图书----");
+                        Console.WriteLine("请输入编辑的书名：");
+                        string editName = Console.ReadLine();
+                        var resEdit = BM.EditBook(editName);
+                        if (resEdit == null) Console.WriteLine("编辑失败，图书不存在！！！\n");
+                        else Console.WriteLine("编辑成功！！！\n");
 
-                        break;
+
+                            break;
                     case "4":
                         Console.WriteLine("----查询所有图书----");
                         string resStr = BM.SearchBook();
                         Console.WriteLine(resStr);
-
-
                         break;
                     case "5":
                         Console.WriteLine("----查询单个图书----");
-
+                        Console.WriteLine("请输入要查询的书名：");
+                        string oneBookName  = Console.ReadLine();
+                        Dictionary<string,dynamic> oneResStr = BM.SearchBook(oneBookName);
+                        string resBook = $"\n书名：{oneResStr["name"]}--作者:{oneResStr["author"]}" +
+                            $"标签：{oneResStr["mark"]}--价格：{oneResStr["price"]}\n";
+                        Console.WriteLine(resBook);
                         break;
                     case "0":
-                        Console.WriteLine("--**退出**--");
+                        Console.WriteLine("--**退出**--\n");
                         break;
                     default:
-                        Console.WriteLine("****输入有误****");
+                        Console.WriteLine("****输入有误****\n");
                         break;
                 }
 

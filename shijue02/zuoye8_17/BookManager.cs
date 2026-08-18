@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
+using System.Reflection.Metadata;
 using System.Security.AccessControl;
 using System.Text;
 using System.Text.Json;
@@ -34,7 +36,6 @@ namespace zuoye8_17
             if (File.Exists(path) && !string.IsNullOrWhiteSpace(json))
             {
                 // 读取文件===>反序列化
-
                 bookList = JsonSerializer.Deserialize<List<Dictionary<string, dynamic>>>(json);// 反序列化                
             }
             if (File.Exists(path) && string.IsNullOrWhiteSpace(json)) 
@@ -60,10 +61,50 @@ namespace zuoye8_17
 
         #region 编辑方法
         // 编辑数据
-        public string EditBook(Dictionary<string, dynamic> bookDic)
+        public Dictionary<string,dynamic> EditBook(string bookName)
         {
-            // 编辑的逻辑处理
-            return "ok";
+            Dictionary<string,dynamic> bookDic = new ();
+            Dictionary<string,dynamic> newDic = new();
+            //判断文件是否存在
+            if(!File.Exists(path)) return bookDic;
+            var json = File.ReadAllText(path);
+            var jsonStr = JsonSerializer.Deserialize<List<Dictionary<string,dynamic>>>(json);
+            bookDic = jsonStr.FirstOrDefault(item => item["name"].ToString() == bookName);
+            int index = jsonStr.FindIndex(item =>  item["name"].ToString() == bookName);
+            if (index != -1)
+            {
+                foreach (var kv in bookDic)
+                {
+                    // kv.Key 是键，kv.Value是值
+                    Console.WriteLine($"{kv.Key} ： {kv.Value}");
+                }
+                Console.WriteLine("编辑作者：");
+                string author = Console.ReadLine();
+                Console.WriteLine("是否借出：");
+                string isborrow = Console.ReadLine();
+                Console.WriteLine("编辑图书ID：");
+                string id = Console.ReadLine();
+                Console.WriteLine("编辑标签：");
+                string mark = Console.ReadLine();
+                Console.WriteLine("编辑价格：");
+                string price = Console.ReadLine();
+                newDic = new()
+                {
+                    ["name"] = bookName,
+                    ["author"] = author,
+                    ["isBorrow"] = isborrow,
+                    ["id"] = id,
+                    ["mark"] = mark,
+                    ["price"] = price
+
+                };
+                jsonStr[index] = newDic;
+                string res = JsonSerializer.Serialize(jsonStr);
+                File.WriteAllText(path, res);
+            }
+            else return bookDic;
+
+            return newDic;
         }
         #endregion
 
@@ -71,8 +112,30 @@ namespace zuoye8_17
         // 删除数据
         public string RemoveBook(string bookName)
         {
-            // 删除的逻辑处理
-            return "ok";
+            List<Dictionary<string, dynamic>> list = new ();
+            List<Dictionary<string, dynamic>> newList = new();
+
+            //判断文件是否存在
+            if (!File.Exists(path)) return "没有可以删除的图书！！！\n";
+            //文件存在则读取文件
+            var str = File.ReadAllText(path);
+            if(string.IsNullOrWhiteSpace(str)) return "没有可以删除的图书！！！\n";
+            
+            //反序列化
+            list = JsonSerializer.Deserialize<List<Dictionary<string, dynamic>>>(str);
+            
+            //找到对应的书名
+            foreach (var item in list)
+            {
+                if (item["name"].ToString() != bookName) newList.Add(item);
+            }
+            var reResult = JsonSerializer.Serialize(newList, JsonOpts);
+            File.WriteAllText(path, reResult);
+            if (list.Count > newList.Count) return "选择图书已删除！！！\n";
+            else return "删除失败，没有找到该图书！！！\n";
+
+
+
         }
         #endregion
 
@@ -94,7 +157,7 @@ namespace zuoye8_17
             string result = "";
             foreach (var item in bookList)
             {
-                result += $"书名:{item["name"]}--作者:{item["author"]}--价格:{item["price"]}\n";
+                result += $"\n书名:{item["name"]}--作者:{item["author"]}--价格:{item["price"]}\n";
             }
 
             return result;
@@ -103,10 +166,24 @@ namespace zuoye8_17
 
         #region 查询点个方法
         // 根据图书名称查询当前图书数据：强制要求
-        public string SearchBook(string bookName) // 返回值根据情况修改
+        public Dictionary<string,dynamic> SearchBook(string bookName) // 返回值根据情况修改
         {
-            // 删除的逻辑处理
-            return "ok";
+            Dictionary<string, dynamic> bookDic = new ();
+
+
+            //判断文件是否存在
+            if (!File.Exists(path)) return bookDic;
+            var jsonStr = File.ReadAllText(path);
+
+            List<Dictionary<string, dynamic>> list =
+                JsonSerializer.Deserialize<List<Dictionary<string,dynamic>>>(jsonStr);
+
+            Dictionary<string,dynamic> newBookDic = list.Find(item => item["name"].ToString() == bookName);
+            if (newBookDic == null) return bookDic;
+
+            return newBookDic;
+            
+
         }
         #endregion
 
