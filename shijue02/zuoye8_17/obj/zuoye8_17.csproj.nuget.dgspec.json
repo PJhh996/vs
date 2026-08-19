@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\xinvyang\\xiangmu\\shijue02\\zuoye8_17\\zuoye8_17.csproj": {}
+    "D:\\xinvyang\\c#_Project\\shijue02\\zuoye8_17\\zuoye8_17.csproj": {}
   },
   "projects": {
-    "D:\\xinvyang\\xiangmu\\shijue02\\zuoye8_17\\zuoye8_17.csproj": {
+    "D:\\xinvyang\\c#_Project\\shijue02\\zuoye8_17\\zuoye8_17.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\xinvyang\\xiangmu\\shijue02\\zuoye8_17\\zuoye8_17.csproj",
+        "projectUniqueName": "D:\\xinvyang\\c#_Project\\shijue02\\zuoye8_17\\zuoye8_17.csproj",
         "projectName": "zuoye8_17",
-        "projectPath": "D:\\xinvyang\\xiangmu\\shijue02\\zuoye8_17\\zuoye8_17.csproj",
+        "projectPath": "D:\\xinvyang\\c#_Project\\shijue02\\zuoye8_17\\zuoye8_17.csproj",
         "packagesPath": "C:\\Users\\饭加含\\.nuget\\packages\\",
-        "outputPath": "D:\\xinvyang\\xiangmu\\shijue02\\zuoye8_17\\obj\\",
+        "outputPath": "D:\\xinvyang\\c#_Project\\shijue02\\zuoye8_17\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\饭加含\\AppData\\Roaming\\NuGet\\NuGet.Config",
