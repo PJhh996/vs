@@ -1,0 +1,42 @@
+[
+  {
+    "Id": 1,
+    "CarId": 1,
+    "UserId": 1,
+    "RentTime": "2026/8/23 22:25:47",
+    "ReturnTime": "2026/8/23 22:33:17",
+    "PayMoney": 111.09321671466665
+  },
+  {
+    "Id": 2,
+    "CarId": 1,
+    "UserId": 2,
+    "RentTime": "2026/8/23 22:26:02",
+    "ReturnTime": "2026/8/23 22:26:13",
+    "PayMoney": 2.9220983840000003
+  },
+  {
+    "Id": 3,
+    "CarId": 2,
+    "UserId": 3,
+    "RentTime": "2026/8/23 22:26:23",
+    "ReturnTime": "",
+    "PayMoney": 0
+  },
+  {
+    "Id": 4,
+    "CarId": 2,
+    "UserId": 2,
+    "RentTime": "2026/8/23 22:33:05",
+    "ReturnTime": "",
+    "PayMoney": 0
+  },
+  {
+    "Id": 5,
+    "CarId": 1,
+    "UserId": 1,
+    "RentTime": "2026/8/23 22:33:34",
+    "ReturnTime": "",
+    "PayMoney": 0
+  }
+]

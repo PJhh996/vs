@@ -1,0 +1,15 @@
+D:\xinvyang\c#_Project\shijue02\zixi8_20\obj\Debug\net8.0\zixi8_20.GeneratedMSBuildEditorConfig.editorconfig
+D:\xinvyang\c#_Project\shijue02\zixi8_20\obj\Debug\net8.0\zixi8_20.AssemblyInfoInputs.cache
+D:\xinvyang\c#_Project\shijue02\zixi8_20\obj\Debug\net8.0\zixi8_20.AssemblyInfo.cs
+D:\xinvyang\c#_Project\shijue02\zixi8_20\obj\Debug\net8.0\zixi8_20.csproj.CoreCompileInputs.cache
+D:\xinvyang\c#_Project\shijue02\zixi8_20\obj\Debug\net8.0\zixi8_20.sourcelink.json
+D:\xinvyang\c#_Project\shijue02\zixi8_20\bin\Debug\net8.0\zixi8_20.exe
+D:\xinvyang\c#_Project\shijue02\zixi8_20\bin\Debug\net8.0\zixi8_20.deps.json
+D:\xinvyang\c#_Project\shijue02\zixi8_20\bin\Debug\net8.0\zixi8_20.runtimeconfig.json
+D:\xinvyang\c#_Project\shijue02\zixi8_20\bin\Debug\net8.0\zixi8_20.dll
+D:\xinvyang\c#_Project\shijue02\zixi8_20\bin\Debug\net8.0\zixi8_20.pdb
+D:\xinvyang\c#_Project\shijue02\zixi8_20\obj\Debug\net8.0\zixi8_20.dll
+D:\xinvyang\c#_Project\shijue02\zixi8_20\obj\Debug\net8.0\refint\zixi8_20.dll
+D:\xinvyang\c#_Project\shijue02\zixi8_20\obj\Debug\net8.0\zixi8_20.pdb
+D:\xinvyang\c#_Project\shijue02\zixi8_20\obj\Debug\net8.0\zixi8_20.genruntimeconfig.cache
+D:\xinvyang\c#_Project\shijue02\zixi8_20\obj\Debug\net8.0\ref\zixi8_20.dll

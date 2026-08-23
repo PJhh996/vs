@@ -1,0 +1,30 @@
+[
+  {
+    "Id": 1,
+    "Card": "桂AL7S20",
+    "Type": "摩托车",
+    "Status": true,
+    "Price": 888
+  },
+  {
+    "Id": 2,
+    "Card": "桂AS0000",
+    "Type": "轿车",
+    "Status": true,
+    "Price": 999
+  },
+  {
+    "Id": 3,
+    "Card": "粤B11111",
+    "Type": "轿车",
+    "Status": true,
+    "Price": 998
+  },
+  {
+    "Id": 4,
+    "Card": "粤B88888",
+    "Type": "轿车",
+    "Status": true,
+    "Price": 888
+  }
+]

@@ -1,0 +1,15 @@
+D:\xinvyang\c#_Project\shijue02\Carzixi8_22\Carzixi8_22\bin\Debug\net8.0\Carzixi8_22.exe
+D:\xinvyang\c#_Project\shijue02\Carzixi8_22\Carzixi8_22\bin\Debug\net8.0\Carzixi8_22.deps.json
+D:\xinvyang\c#_Project\shijue02\Carzixi8_22\Carzixi8_22\bin\Debug\net8.0\Carzixi8_22.runtimeconfig.json
+D:\xinvyang\c#_Project\shijue02\Carzixi8_22\Carzixi8_22\bin\Debug\net8.0\Carzixi8_22.dll
+D:\xinvyang\c#_Project\shijue02\Carzixi8_22\Carzixi8_22\bin\Debug\net8.0\Carzixi8_22.pdb
+D:\xinvyang\c#_Project\shijue02\Carzixi8_22\Carzixi8_22\obj\Debug\net8.0\Carzixi8_22.GeneratedMSBuildEditorConfig.editorconfig
+D:\xinvyang\c#_Project\shijue02\Carzixi8_22\Carzixi8_22\obj\Debug\net8.0\Carzixi8_22.AssemblyInfoInputs.cache
+D:\xinvyang\c#_Project\shijue02\Carzixi8_22\Carzixi8_22\obj\Debug\net8.0\Carzixi8_22.AssemblyInfo.cs
+D:\xinvyang\c#_Project\shijue02\Carzixi8_22\Carzixi8_22\obj\Debug\net8.0\Carzixi8_22.csproj.CoreCompileInputs.cache
+D:\xinvyang\c#_Project\shijue02\Carzixi8_22\Carzixi8_22\obj\Debug\net8.0\Carzixi8_22.sourcelink.json
+D:\xinvyang\c#_Project\shijue02\Carzixi8_22\Carzixi8_22\obj\Debug\net8.0\Carzixi8_22.dll
+D:\xinvyang\c#_Project\shijue02\Carzixi8_22\Carzixi8_22\obj\Debug\net8.0\refint\Carzixi8_22.dll
+D:\xinvyang\c#_Project\shijue02\Carzixi8_22\Carzixi8_22\obj\Debug\net8.0\Carzixi8_22.pdb
+D:\xinvyang\c#_Project\shijue02\Carzixi8_22\Carzixi8_22\obj\Debug\net8.0\Carzixi8_22.genruntimeconfig.cache
+D:\xinvyang\c#_Project\shijue02\Carzixi8_22\Carzixi8_22\obj\Debug\net8.0\ref\Carzixi8_22.dll

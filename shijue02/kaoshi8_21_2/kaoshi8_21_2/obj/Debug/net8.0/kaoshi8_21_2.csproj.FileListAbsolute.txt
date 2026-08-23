@@ -1,0 +1,15 @@
+D:\xinvyang\c#_Project\shijue02\kaoshi8_21_2\kaoshi8_21_2\bin\Debug\net8.0\kaoshi8_21_2.exe
+D:\xinvyang\c#_Project\shijue02\kaoshi8_21_2\kaoshi8_21_2\bin\Debug\net8.0\kaoshi8_21_2.deps.json
+D:\xinvyang\c#_Project\shijue02\kaoshi8_21_2\kaoshi8_21_2\bin\Debug\net8.0\kaoshi8_21_2.runtimeconfig.json
+D:\xinvyang\c#_Project\shijue02\kaoshi8_21_2\kaoshi8_21_2\bin\Debug\net8.0\kaoshi8_21_2.dll
+D:\xinvyang\c#_Project\shijue02\kaoshi8_21_2\kaoshi8_21_2\bin\Debug\net8.0\kaoshi8_21_2.pdb
+D:\xinvyang\c#_Project\shijue02\kaoshi8_21_2\kaoshi8_21_2\obj\Debug\net8.0\kaoshi8_21_2.GeneratedMSBuildEditorConfig.editorconfig
+D:\xinvyang\c#_Project\shijue02\kaoshi8_21_2\kaoshi8_21_2\obj\Debug\net8.0\kaoshi8_21_2.AssemblyInfoInputs.cache
+D:\xinvyang\c#_Project\shijue02\kaoshi8_21_2\kaoshi8_21_2\obj\Debug\net8.0\kaoshi8_21_2.AssemblyInfo.cs
+D:\xinvyang\c#_Project\shijue02\kaoshi8_21_2\kaoshi8_21_2\obj\Debug\net8.0\kaoshi8_21_2.csproj.CoreCompileInputs.cache
+D:\xinvyang\c#_Project\shijue02\kaoshi8_21_2\kaoshi8_21_2\obj\Debug\net8.0\kaoshi8_21_2.sourcelink.json
+D:\xinvyang\c#_Project\shijue02\kaoshi8_21_2\kaoshi8_21_2\obj\Debug\net8.0\kaoshi8_21_2.dll
+D:\xinvyang\c#_Project\shijue02\kaoshi8_21_2\kaoshi8_21_2\obj\Debug\net8.0\refint\kaoshi8_21_2.dll
+D:\xinvyang\c#_Project\shijue02\kaoshi8_21_2\kaoshi8_21_2\obj\Debug\net8.0\kaoshi8_21_2.pdb
+D:\xinvyang\c#_Project\shijue02\kaoshi8_21_2\kaoshi8_21_2\obj\Debug\net8.0\kaoshi8_21_2.genruntimeconfig.cache
+D:\xinvyang\c#_Project\shijue02\kaoshi8_21_2\kaoshi8_21_2\obj\Debug\net8.0\ref\kaoshi8_21_2.dll
