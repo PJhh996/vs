@@ -1,0 +1,103 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\xinvyang\\Project\\WinForm_Project\\day03\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{17B5370C-EA3B-34D0-E04D-6EA049A8ADF3}|day03\\day03.csproj|d:\\xinvyang\\project\\winform_project\\day03\\day03\\move.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17B5370C-EA3B-34D0-E04D-6EA049A8ADF3}|day03\\day03.csproj|solutionrelative:day03\\move.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17B5370C-EA3B-34D0-E04D-6EA049A8ADF3}|day03\\day03.csproj|d:\\xinvyang\\project\\winform_project\\day03\\day03\\move.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{17B5370C-EA3B-34D0-E04D-6EA049A8ADF3}|day03\\day03.csproj|solutionrelative:day03\\move.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17B5370C-EA3B-34D0-E04D-6EA049A8ADF3}|day03\\day03.csproj|d:\\xinvyang\\project\\winform_project\\day03\\day03\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17B5370C-EA3B-34D0-E04D-6EA049A8ADF3}|day03\\day03.csproj|solutionrelative:day03\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17B5370C-EA3B-34D0-E04D-6EA049A8ADF3}|day03\\day03.csproj|d:\\xinvyang\\project\\winform_project\\day03\\day03\\mousexy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17B5370C-EA3B-34D0-E04D-6EA049A8ADF3}|day03\\day03.csproj|solutionrelative:day03\\mousexy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17B5370C-EA3B-34D0-E04D-6EA049A8ADF3}|day03\\day03.csproj|d:\\xinvyang\\project\\winform_project\\day03\\day03\\mousexy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{17B5370C-EA3B-34D0-E04D-6EA049A8ADF3}|day03\\day03.csproj|solutionrelative:day03\\mousexy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\xinvyang\\Project\\WinForm_Project\\day03\\day03\\Program.cs",
+              "RelativeDocumentMoniker": "day03\\Program.cs",
+              "ToolTip": "D:\\xinvyang\\Project\\WinForm_Project\\day03\\day03\\Program.cs",
+              "RelativeToolTip": "day03\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-26T12:50:25.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Move.cs",
+              "DocumentMoniker": "D:\\xinvyang\\Project\\WinForm_Project\\day03\\day03\\Move.cs",
+              "RelativeDocumentMoniker": "day03\\Move.cs",
+              "ToolTip": "D:\\xinvyang\\Project\\WinForm_Project\\day03\\day03\\Move.cs*",
+              "RelativeToolTip": "day03\\Move.cs*",
+              "ViewState": "AgIAACIAAAAAAAAAAAAUwC4AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-26T12:31:12.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Move.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "D:\\xinvyang\\Project\\WinForm_Project\\day03\\day03\\Move.cs",
+              "RelativeDocumentMoniker": "day03\\Move.cs",
+              "ToolTip": "D:\\xinvyang\\Project\\WinForm_Project\\day03\\day03\\Move.cs [\u8BBE\u8BA1]*",
+              "RelativeToolTip": "day03\\Move.cs [\u8BBE\u8BA1]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-26T12:28:52.637Z",
+              "EditorCaption": " [\u8BBE\u8BA1]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MouseXY.cs",
+              "DocumentMoniker": "D:\\xinvyang\\Project\\WinForm_Project\\day03\\day03\\MouseXY.cs",
+              "RelativeDocumentMoniker": "day03\\MouseXY.cs",
+              "ToolTip": "D:\\xinvyang\\Project\\WinForm_Project\\day03\\day03\\MouseXY.cs",
+              "RelativeToolTip": "day03\\MouseXY.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAIwDAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-26T12:19:14.876Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MouseXY.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "D:\\xinvyang\\Project\\WinForm_Project\\day03\\day03\\MouseXY.cs",
+              "RelativeDocumentMoniker": "day03\\MouseXY.cs",
+              "ToolTip": "D:\\xinvyang\\Project\\WinForm_Project\\day03\\day03\\MouseXY.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "day03\\MouseXY.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-26T11:15:06.373Z",
+              "EditorCaption": " [\u8BBE\u8BA1]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

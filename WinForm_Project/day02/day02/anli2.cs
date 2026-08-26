@@ -28,7 +28,6 @@ namespace day02
             for (int i = 0; i < panel1.Controls.Count; i++)
             {
                 panel1.Controls[i].Click += click;
-
             }
         }
 
