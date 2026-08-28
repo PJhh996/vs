@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{ECE5B2CE-0640-8B33-D374-3BBE444A5DD8}|day04\\day04.csproj|solutionrelative:day04\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECE5B2CE-0640-8B33-D374-3BBE444A5DD8}|day04\\day04.csproj|d:\\xinvyang\\project\\winform_project\\day04\\day04\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{ECE5B2CE-0640-8B33-D374-3BBE444A5DD8}|day04\\day04.csproj|D:\\xinvyang\\Project\\WinForm_Project\\day04\\day04\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{ECE5B2CE-0640-8B33-D374-3BBE444A5DD8}|day04\\day04.csproj|solutionrelative:day04\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -32,10 +32,9 @@
               "RelativeDocumentMoniker": "day04\\Program.cs",
               "ToolTip": "D:\\xinvyang\\Project\\WinForm_Project\\day04\\day04\\Program.cs",
               "RelativeToolTip": "day04\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-27T12:04:27.839Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-27T12:04:27.839Z"
             },
             {
               "$type": "Document",
@@ -43,9 +42,9 @@
               "Title": "Form2.cs",
               "DocumentMoniker": "D:\\xinvyang\\Project\\WinForm_Project\\day04\\day04\\Form2.cs",
               "RelativeDocumentMoniker": "day04\\Form2.cs",
-              "ToolTip": "D:\\xinvyang\\Project\\WinForm_Project\\day04\\day04\\Form2.cs*",
-              "RelativeToolTip": "day04\\Form2.cs*",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAQwEgAAAATAAAAAAAAAA==",
+              "ToolTip": "D:\\xinvyang\\Project\\WinForm_Project\\day04\\day04\\Form2.cs",
+              "RelativeToolTip": "day04\\Form2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-27T11:29:15.65Z",
               "EditorCaption": ""
@@ -56,11 +55,10 @@
               "Title": "Form2.cs [\u8BBE\u8BA1]",
               "DocumentMoniker": "D:\\xinvyang\\Project\\WinForm_Project\\day04\\day04\\Form2.cs",
               "RelativeDocumentMoniker": "day04\\Form2.cs",
-              "ToolTip": "D:\\xinvyang\\Project\\WinForm_Project\\day04\\day04\\Form2.cs [\u8BBE\u8BA1]*",
-              "RelativeToolTip": "day04\\Form2.cs [\u8BBE\u8BA1]*",
+              "ToolTip": "D:\\xinvyang\\Project\\WinForm_Project\\day04\\day04\\Form2.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "day04\\Form2.cs [\u8BBE\u8BA1]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-27T11:18:20.394Z",
-              "EditorCaption": " [\u8BBE\u8BA1]"
+              "WhenOpened": "2026-08-27T11:18:20.394Z"
             }
           ]
         }

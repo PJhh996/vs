@@ -1,0 +1,17 @@
+D:\xinvyang\Project\WinForm_Project\homework1\homework1\obj\Debug\net10.0-windows\homework1.Form1.resources
+D:\xinvyang\Project\WinForm_Project\homework1\homework1\obj\Debug\net10.0-windows\homework1.csproj.GenerateResource.cache
+D:\xinvyang\Project\WinForm_Project\homework1\homework1\obj\Debug\net10.0-windows\homework1.GeneratedMSBuildEditorConfig.editorconfig
+D:\xinvyang\Project\WinForm_Project\homework1\homework1\obj\Debug\net10.0-windows\homework1.AssemblyInfoInputs.cache
+D:\xinvyang\Project\WinForm_Project\homework1\homework1\obj\Debug\net10.0-windows\homework1.AssemblyInfo.cs
+D:\xinvyang\Project\WinForm_Project\homework1\homework1\obj\Debug\net10.0-windows\homework1.csproj.CoreCompileInputs.cache
+D:\xinvyang\Project\WinForm_Project\homework1\homework1\obj\Debug\net10.0-windows\homework1.sourcelink.json
+D:\xinvyang\Project\WinForm_Project\homework1\homework1\bin\Debug\net10.0-windows\homework1.exe
+D:\xinvyang\Project\WinForm_Project\homework1\homework1\bin\Debug\net10.0-windows\homework1.deps.json
+D:\xinvyang\Project\WinForm_Project\homework1\homework1\bin\Debug\net10.0-windows\homework1.runtimeconfig.json
+D:\xinvyang\Project\WinForm_Project\homework1\homework1\bin\Debug\net10.0-windows\homework1.dll
+D:\xinvyang\Project\WinForm_Project\homework1\homework1\bin\Debug\net10.0-windows\homework1.pdb
+D:\xinvyang\Project\WinForm_Project\homework1\homework1\obj\Debug\net10.0-windows\homework1.dll
+D:\xinvyang\Project\WinForm_Project\homework1\homework1\obj\Debug\net10.0-windows\refint\homework1.dll
+D:\xinvyang\Project\WinForm_Project\homework1\homework1\obj\Debug\net10.0-windows\homework1.pdb
+D:\xinvyang\Project\WinForm_Project\homework1\homework1\obj\Debug\net10.0-windows\homework1.genruntimeconfig.cache
+D:\xinvyang\Project\WinForm_Project\homework1\homework1\obj\Debug\net10.0-windows\ref\homework1.dll

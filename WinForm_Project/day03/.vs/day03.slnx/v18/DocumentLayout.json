@@ -3,11 +3,19 @@
   "WorkspaceRootPath": "D:\\xinvyang\\Project\\WinForm_Project\\day03\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{17B5370C-EA3B-34D0-E04D-6EA049A8ADF3}|day03\\day03.csproj|d:\\xinvyang\\project\\winform_project\\day03\\day03\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{17B5370C-EA3B-34D0-E04D-6EA049A8ADF3}|day03\\day03.csproj|solutionrelative:day03\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17B5370C-EA3B-34D0-E04D-6EA049A8ADF3}|day03\\day03.csproj|D:\\xinvyang\\Project\\WinForm_Project\\day03\\day03\\focusint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{17B5370C-EA3B-34D0-E04D-6EA049A8ADF3}|day03\\day03.csproj|solutionrelative:day03\\focusint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{17B5370C-EA3B-34D0-E04D-6EA049A8ADF3}|day03\\day03.csproj|d:\\xinvyang\\project\\winform_project\\day03\\day03\\move.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17B5370C-EA3B-34D0-E04D-6EA049A8ADF3}|day03\\day03.csproj|solutionrelative:day03\\move.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17B5370C-EA3B-34D0-E04D-6EA049A8ADF3}|day03\\day03.csproj|d:\\xinvyang\\project\\winform_project\\day03\\day03\\move.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{17B5370C-EA3B-34D0-E04D-6EA049A8ADF3}|day03\\day03.csproj|D:\\xinvyang\\Project\\WinForm_Project\\day03\\day03\\move.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{17B5370C-EA3B-34D0-E04D-6EA049A8ADF3}|day03\\day03.csproj|solutionrelative:day03\\move.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -19,7 +27,7 @@
       "RelativeMoniker": "D:0:0:{17B5370C-EA3B-34D0-E04D-6EA049A8ADF3}|day03\\day03.csproj|solutionrelative:day03\\mousexy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17B5370C-EA3B-34D0-E04D-6EA049A8ADF3}|day03\\day03.csproj|d:\\xinvyang\\project\\winform_project\\day03\\day03\\mousexy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{17B5370C-EA3B-34D0-E04D-6EA049A8ADF3}|day03\\day03.csproj|D:\\xinvyang\\Project\\WinForm_Project\\day03\\day03\\mousexy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{17B5370C-EA3B-34D0-E04D-6EA049A8ADF3}|day03\\day03.csproj|solutionrelative:day03\\mousexy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -30,11 +38,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "D:\\xinvyang\\Project\\WinForm_Project\\day03\\day03\\Form1.cs",
+              "RelativeDocumentMoniker": "day03\\Form1.cs",
+              "ToolTip": "D:\\xinvyang\\Project\\WinForm_Project\\day03\\day03\\Form1.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "day03\\Form1.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-28T13:13:53.77Z",
+              "EditorCaption": " [\u8BBE\u8BA1]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FocusInt.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "D:\\xinvyang\\Project\\WinForm_Project\\day03\\day03\\FocusInt.cs",
+              "RelativeDocumentMoniker": "day03\\FocusInt.cs",
+              "ToolTip": "D:\\xinvyang\\Project\\WinForm_Project\\day03\\day03\\FocusInt.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "day03\\FocusInt.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-28T13:13:41.846Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\xinvyang\\Project\\WinForm_Project\\day03\\day03\\Program.cs",
               "RelativeDocumentMoniker": "day03\\Program.cs",
@@ -42,37 +73,35 @@
               "RelativeToolTip": "day03\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-26T12:50:25.105Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-26T12:50:25.105Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Move.cs",
               "DocumentMoniker": "D:\\xinvyang\\Project\\WinForm_Project\\day03\\day03\\Move.cs",
               "RelativeDocumentMoniker": "day03\\Move.cs",
               "ToolTip": "D:\\xinvyang\\Project\\WinForm_Project\\day03\\day03\\Move.cs",
               "RelativeToolTip": "day03\\Move.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAUwC4AAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwBUAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-26T12:31:12.196Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Move.cs [\u8BBE\u8BA1]",
               "DocumentMoniker": "D:\\xinvyang\\Project\\WinForm_Project\\day03\\day03\\Move.cs",
               "RelativeDocumentMoniker": "day03\\Move.cs",
               "ToolTip": "D:\\xinvyang\\Project\\WinForm_Project\\day03\\day03\\Move.cs [\u8BBE\u8BA1]",
               "RelativeToolTip": "day03\\Move.cs [\u8BBE\u8BA1]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-26T12:28:52.637Z",
-              "EditorCaption": " [\u8BBE\u8BA1]"
+              "WhenOpened": "2026-08-26T12:28:52.637Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "MouseXY.cs",
               "DocumentMoniker": "D:\\xinvyang\\Project\\WinForm_Project\\day03\\day03\\MouseXY.cs",
               "RelativeDocumentMoniker": "day03\\MouseXY.cs",
@@ -85,15 +114,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "MouseXY.cs [\u8BBE\u8BA1]",
               "DocumentMoniker": "D:\\xinvyang\\Project\\WinForm_Project\\day03\\day03\\MouseXY.cs",
               "RelativeDocumentMoniker": "day03\\MouseXY.cs",
               "ToolTip": "D:\\xinvyang\\Project\\WinForm_Project\\day03\\day03\\MouseXY.cs [\u8BBE\u8BA1]",
               "RelativeToolTip": "day03\\MouseXY.cs [\u8BBE\u8BA1]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-26T11:15:06.373Z",
-              "EditorCaption": " [\u8BBE\u8BA1]"
+              "WhenOpened": "2026-08-26T11:15:06.373Z"
             }
           ]
         }
