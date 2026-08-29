@@ -1,0 +1,86 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\xinvyang\\Project\\WinForm_Project\\homework5\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9D65AB5A-5D66-4155-8B59-CF6ADFD5AAA4}|homework5\\homework5.csproj|d:\\xinvyang\\project\\winform_project\\homework5\\homework5\\addform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D65AB5A-5D66-4155-8B59-CF6ADFD5AAA4}|homework5\\homework5.csproj|solutionrelative:homework5\\addform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D65AB5A-5D66-4155-8B59-CF6ADFD5AAA4}|homework5\\homework5.csproj|d:\\xinvyang\\project\\winform_project\\homework5\\homework5\\addform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9D65AB5A-5D66-4155-8B59-CF6ADFD5AAA4}|homework5\\homework5.csproj|solutionrelative:homework5\\addform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D65AB5A-5D66-4155-8B59-CF6ADFD5AAA4}|homework5\\homework5.csproj|d:\\xinvyang\\project\\winform_project\\homework5\\homework5\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D65AB5A-5D66-4155-8B59-CF6ADFD5AAA4}|homework5\\homework5.csproj|solutionrelative:homework5\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D65AB5A-5D66-4155-8B59-CF6ADFD5AAA4}|homework5\\homework5.csproj|d:\\xinvyang\\project\\winform_project\\homework5\\homework5\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9D65AB5A-5D66-4155-8B59-CF6ADFD5AAA4}|homework5\\homework5.csproj|solutionrelative:homework5\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddForm.cs",
+              "DocumentMoniker": "D:\\xinvyang\\Project\\WinForm_Project\\homework5\\homework5\\AddForm.cs",
+              "RelativeDocumentMoniker": "homework5\\AddForm.cs",
+              "ToolTip": "D:\\xinvyang\\Project\\WinForm_Project\\homework5\\homework5\\AddForm.cs*",
+              "RelativeToolTip": "homework5\\AddForm.cs*",
+              "ViewState": "AgIAABUAAAAAAAAAAAAIwCoAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-29T12:57:11.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddForm.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "D:\\xinvyang\\Project\\WinForm_Project\\homework5\\homework5\\AddForm.cs",
+              "RelativeDocumentMoniker": "homework5\\AddForm.cs",
+              "ToolTip": "D:\\xinvyang\\Project\\WinForm_Project\\homework5\\homework5\\AddForm.cs [\u8BBE\u8BA1]*",
+              "RelativeToolTip": "homework5\\AddForm.cs [\u8BBE\u8BA1]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-29T12:50:57.179Z",
+              "EditorCaption": " [\u8BBE\u8BA1]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\xinvyang\\Project\\WinForm_Project\\homework5\\homework5\\Form1.cs",
+              "RelativeDocumentMoniker": "homework5\\Form1.cs",
+              "ToolTip": "D:\\xinvyang\\Project\\WinForm_Project\\homework5\\homework5\\Form1.cs",
+              "RelativeToolTip": "homework5\\Form1.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAIwA8AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-29T12:46:41.829Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "D:\\xinvyang\\Project\\WinForm_Project\\homework5\\homework5\\Form1.cs",
+              "RelativeDocumentMoniker": "homework5\\Form1.cs",
+              "ToolTip": "D:\\xinvyang\\Project\\WinForm_Project\\homework5\\homework5\\Form1.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "homework5\\Form1.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-29T12:39:58.747Z",
+              "EditorCaption": " [\u8BBE\u8BA1]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
