@@ -35,6 +35,9 @@
             button5 = new Button();
             button6 = new Button();
             button7 = new Button();
+            flowLayoutPanel1 = new FlowLayoutPanel();
+            userBook1 = new homework5.USctrl.UserBook();
+            flowLayoutPanel1.SuspendLayout();
             SuspendLayout();
             // 
             // button1
@@ -100,11 +103,31 @@
             button7.Text = "归还图书";
             button7.UseVisualStyleBackColor = true;
             // 
+            // flowLayoutPanel1
+            // 
+            flowLayoutPanel1.BorderStyle = BorderStyle.FixedSingle;
+            flowLayoutPanel1.Controls.Add(userBook1);
+            flowLayoutPanel1.FlowDirection = FlowDirection.TopDown;
+            flowLayoutPanel1.Location = new Point(277, 8);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(511, 430);
+            flowLayoutPanel1.TabIndex = 1;
+            // 
+            // userBook1
+            // 
+            userBook1.AutoScroll = true;
+            userBook1.Location = new Point(3, 3);
+            userBook1.Name = "userBook1";
+            userBook1.Size = new Size(507, 202);
+            userBook1.TabIndex = 0;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(11F, 24F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImageLayout = ImageLayout.Center;
             ClientSize = new Size(800, 450);
+            Controls.Add(flowLayoutPanel1);
             Controls.Add(button7);
             Controls.Add(button6);
             Controls.Add(button5);
@@ -114,6 +137,7 @@
             Controls.Add(button1);
             Name = "Form1";
             Text = "Form1";
+            flowLayoutPanel1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -126,5 +150,7 @@
         private Button button5;
         private Button button6;
         private Button button7;
+        private FlowLayoutPanel flowLayoutPanel1;
+        private USctrl.UserBook userBook1;
     }
 }

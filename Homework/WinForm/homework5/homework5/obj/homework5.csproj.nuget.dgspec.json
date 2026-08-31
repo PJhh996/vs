@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\xinvyang\\Project\\WinForm_Project\\homework5\\homework5\\homework5.csproj": {}
+    "D:\\xinvyang\\Project\\Homework\\WinForm\\homework5\\homework5\\homework5.csproj": {}
   },
   "projects": {
-    "D:\\xinvyang\\Project\\WinForm_Project\\homework5\\homework5\\homework5.csproj": {
+    "D:\\xinvyang\\Project\\Homework\\WinForm\\homework5\\homework5\\homework5.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\xinvyang\\Project\\WinForm_Project\\homework5\\homework5\\homework5.csproj",
+        "projectUniqueName": "D:\\xinvyang\\Project\\Homework\\WinForm\\homework5\\homework5\\homework5.csproj",
         "projectName": "homework5",
-        "projectPath": "D:\\xinvyang\\Project\\WinForm_Project\\homework5\\homework5\\homework5.csproj",
+        "projectPath": "D:\\xinvyang\\Project\\Homework\\WinForm\\homework5\\homework5\\homework5.csproj",
         "packagesPath": "C:\\Users\\饭加含\\.nuget\\packages\\",
-        "outputPath": "D:\\xinvyang\\Project\\WinForm_Project\\homework5\\homework5\\obj\\",
+        "outputPath": "D:\\xinvyang\\Project\\Homework\\WinForm\\homework5\\homework5\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\饭加含\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -47,6 +47,12 @@
         "net10.0-windows": {
           "framework": "net10.0-windows7.0",
           "targetAlias": "net10.0-windows",
+          "dependencies": {
+            "AntdUI": {
+              "target": "Package",
+              "version": "[2.4.7, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using homework5.USctrl;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,12 +11,18 @@ namespace homework5
 {
     public partial class AddForm : Form
     {
-        List<Dictionary<string,dynamic>> bookList = new List<Dictionary<string,dynamic>>();
-        
-
+        //接收主窗口 传过来的 流式布局
+        private FlowLayoutPanel _flow;
+        public List<Dictionary<string,dynamic>> bookList = new List<Dictionary<string,dynamic>>();       
         public AddForm()
         {
             InitializeComponent();
+            //InitAdd();
+        }
+        public AddForm(FlowLayoutPanel flow) 
+        {
+            InitializeComponent();
+            _flow = flow;
             InitAdd();
         }
         private void InitAdd()
@@ -33,13 +40,15 @@ namespace homework5
             Dictionary<string, dynamic> bookDic = new()
             {
                 ["书名"] = bookname,
-                ["作者"] = bookname,
-                ["价格"] = bookname,
-                ["标签"] = bookname,
+                ["作者"] = author,
+                ["价格"] = price,
+                ["标签"] = mark,
                 ["是否借出"] = false
             };
 
             bookList.Add(bookDic);
+            UserBook book = new UserBook(bookname, author,price,mark);
+            _flow.Controls.Add(book);
             MessageBox.Show("添加成功");
         }
     }

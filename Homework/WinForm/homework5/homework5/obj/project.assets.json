@@ -1,11 +1,58 @@
 {
   "version": 4,
   "targets": {
-    "net10.0-windows": {}
+    "net10.0-windows": {
+      "AntdUI/2.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0-windows7.0/AntdUI.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0-windows7.0/AntdUI.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ]
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "AntdUI/2.4.7": {
+      "sha512": "uVKl0o2G/zovMB91aNjXg62uVQGYJ58ABD9KYBJzr2AOGqIULuUVOc6PclpY4RFey8OZaXmhVzBEYikh1eY3Ag==",
+      "type": "package",
+      "path": "antdui/2.4.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "antdui.2.4.7.nupkg.sha512",
+        "antdui.nuspec",
+        "lib/net10.0-windows7.0/AntdUI.dll",
+        "lib/net10.0-windows7.0/AntdUI.xml",
+        "lib/net40/AntdUI.dll",
+        "lib/net40/AntdUI.xml",
+        "lib/net46/AntdUI.dll",
+        "lib/net46/AntdUI.xml",
+        "lib/net48/AntdUI.dll",
+        "lib/net48/AntdUI.xml",
+        "lib/net6.0-windows7.0/AntdUI.dll",
+        "lib/net6.0-windows7.0/AntdUI.xml",
+        "lib/net8.0-windows7.0/AntdUI.dll",
+        "lib/net8.0-windows7.0/AntdUI.xml",
+        "lib/net9.0-windows7.0/AntdUI.dll",
+        "lib/net9.0-windows7.0/AntdUI.xml",
+        "logo.png"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net10.0-windows": []
+    "net10.0-windows": [
+      "AntdUI >= 2.4.7"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\饭加含\\.nuget\\packages\\": {}
@@ -13,11 +60,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\xinvyang\\Project\\WinForm_Project\\homework5\\homework5\\homework5.csproj",
+      "projectUniqueName": "D:\\xinvyang\\Project\\Homework\\WinForm\\homework5\\homework5\\homework5.csproj",
       "projectName": "homework5",
-      "projectPath": "D:\\xinvyang\\Project\\WinForm_Project\\homework5\\homework5\\homework5.csproj",
+      "projectPath": "D:\\xinvyang\\Project\\Homework\\WinForm\\homework5\\homework5\\homework5.csproj",
       "packagesPath": "C:\\Users\\饭加含\\.nuget\\packages\\",
-      "outputPath": "D:\\xinvyang\\Project\\WinForm_Project\\homework5\\homework5\\obj\\",
+      "outputPath": "D:\\xinvyang\\Project\\Homework\\WinForm\\homework5\\homework5\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\饭加含\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -53,6 +100,12 @@
       "net10.0-windows": {
         "framework": "net10.0-windows7.0",
         "targetAlias": "net10.0-windows",
+        "dependencies": {
+          "AntdUI": {
+            "target": "Package",
+            "version": "[2.4.7, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

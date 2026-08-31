@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "L2witlWpUSw=",
+  "dgSpecHash": "/1M5yrGTOBA=",
   "success": true,
-  "projectFilePath": "D:\\xinvyang\\Project\\WinForm_Project\\homework5\\homework5\\homework5.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\xinvyang\\Project\\Homework\\WinForm\\homework5\\homework5\\homework5.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\饭加含\\.nuget\\packages\\antdui\\2.4.7\\antdui.2.4.7.nupkg.sha512"
+  ],
   "logs": []
 }

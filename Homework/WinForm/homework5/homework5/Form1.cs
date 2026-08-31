@@ -1,8 +1,11 @@
+using homework5.USctrl;
+
 namespace homework5
 {
     public partial class Form1 : Form
     {
-        AddForm add = new AddForm();
+        AddForm add;
+        //UserBook userControl = new UserBook();
         public Form1()
         {
             InitializeComponent();
@@ -15,7 +18,10 @@ namespace homework5
 
         private void Add_Click(object? sender, EventArgs e)
         {
+            add = new AddForm(flowLayoutPanel1);
             add.Show();
+            
+            //add.bookList
         }
     }
 }
