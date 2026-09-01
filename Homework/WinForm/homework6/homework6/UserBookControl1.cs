@@ -11,6 +11,7 @@ namespace homework6
 {
     public partial class UserBookControl1 : UserControl
     {
+        
         public UserBookControl1()
         {
             InitializeComponent();
@@ -20,7 +21,7 @@ namespace homework6
         {
             InitializeComponent();
             InitBtn();
-            addbtn.Text = text;
+            btn.Text = text;
             booktip.Text = "图书"+text;
         }
 
@@ -29,10 +30,10 @@ namespace homework6
 
         private void InitBtn()
         {
-            addbtn.Click += Addbtn_Click;
+            btn.Click += btn_Click;
         }
 
-        private void Addbtn_Click(object? sender, EventArgs e)
+        private void btn_Click(object? sender, EventArgs e)
         {
             BookInfo bookInfo = new BookInfo()
             {
@@ -52,6 +53,25 @@ namespace homework6
         //    get { return edibook; }
         //    set { edibook = value; }
         //}
+        private BookInfo _editBook;
+        public BookInfo EditBook
+        { 
+            get => _editBook;
+            set 
+            { 
+                _editBook = value;
+                if (value != null)
+                {
+                    //自动回填到各个文本框
+                    nameInp.Text = value.BookName;
+                    authorInp.Text = value.Author;
+                    priceInp.Text = value.Price.ToString();
+                    markInp.Text = value.Mark;
+                }
+            }
+        }
+
+
 
     }
 }

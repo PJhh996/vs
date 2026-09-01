@@ -13,6 +13,7 @@ namespace homework6
     public partial class BookEdi : Form
     {
         BookInfo BookInfo = new BookInfo();
+        BookInfo editbook;
         public BookEdi()
         {
             InitializeComponent();
@@ -24,22 +25,23 @@ namespace homework6
             InitEdi(Id);
         }
         List<BookInfo> bookList = new List<BookInfo>();
-        BookInfo book;
+        
         string jsonStr = "";
         private void InitEdi(string id) 
         { 
             
             jsonStr = File.ReadAllText("./book.json");
             bookList = JsonSerializer.Deserialize<List<BookInfo>>(jsonStr);
-            book = bookList.Find(item => item.Id == id);
+            editbook = bookList.Find(item => item.Id == id);
+            userBookControl11.EditBook = editbook;
             userBookControl11.BookEvent += BookEdi_Event;
         }
         private void BookEdi_Event(BookInfo obj)
         {
-            book.Id = obj.Id;
-            book.Author = obj.Author;
-            book.Price = obj.Price;
-            book.Mark = obj.Mark;
+            editbook.BookName = obj.BookName;
+            editbook.Author = obj.Author;
+            editbook.Price = obj.Price;
+            editbook.Mark = obj.Mark;
             jsonStr = JsonSerializer.Serialize(bookList, new JsonSerializerOptions()
             {
                 WriteIndented = true,
@@ -47,7 +49,7 @@ namespace homework6
                 Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping
             });
             File.WriteAllText("./book.json", jsonStr);
-            MessageBox.Show("新增图书成功");
+            MessageBox.Show("编辑图书成功");
             this.Close();
 
         }

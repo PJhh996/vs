@@ -1,17 +1,9 @@
 [
   {
-    "Id": "86276d6e-e943-465b-9efc-e8973d7df322",
-    "BookName": "三国演义 ",
-    "Author": "罗贯中",
-    "Price": 98,
-    "Mark": "枭雄\r\n战争\r\n谋略",
-    "IsBorrow": false
-  },
-  {
     "Id": "2ce87954-30ba-4c3a-9254-7d9d13dffef9",
-    "BookName": "斗罗大陆",
+    "BookName": "西游记",
     "Author": "施耐庵",
-    "Price": 68,
+    "Price": 0,
     "Mark": "冒险\r\n神话",
     "IsBorrow": false
   }

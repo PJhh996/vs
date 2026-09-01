@@ -37,7 +37,7 @@
             authorInp = new AntdUI.Input();
             markInp = new AntdUI.Input();
             priceInp = new AntdUI.InputNumber();
-            addbtn = new AntdUI.Button();
+            btn = new AntdUI.Button();
             SuspendLayout();
             // 
             // booktip
@@ -121,18 +121,18 @@
             priceInp.TabIndex = 3;
             priceInp.Text = "0";
             // 
-            // addbtn
+            // btn
             // 
-            addbtn.Location = new Point(319, 550);
-            addbtn.Name = "addbtn";
-            addbtn.Size = new Size(180, 94);
-            addbtn.TabIndex = 4;
+            btn.Location = new Point(319, 550);
+            btn.Name = "btn";
+            btn.Size = new Size(180, 94);
+            btn.TabIndex = 4;
             // 
             // UserBookControl1
             // 
             AutoScaleDimensions = new SizeF(11F, 24F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(addbtn);
+            Controls.Add(btn);
             Controls.Add(priceInp);
             Controls.Add(markInp);
             Controls.Add(authorInp);
@@ -158,6 +158,6 @@
         private AntdUI.Input authorInp;
         private AntdUI.Input markInp;
         private AntdUI.InputNumber priceInp;
-        private AntdUI.Button addbtn;
+        private AntdUI.Button btn;
     }
 }

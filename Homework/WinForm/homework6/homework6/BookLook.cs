@@ -23,6 +23,57 @@ namespace homework6
                 MessageBox.Show("暂时没有书籍");
                 this.Close();
             }
+            Fn();
+            table1.CellClick += Table1_CellClick;
+
+        }
+
+        private void Table1_CellClick(object sender, AntdUI.TableClickEventArgs e)
+        {
+            BookInfo bookInfo = (e.Record as BookInfo);
+            if (e.ColumnIndex.ToString() == "6")
+            {
+                //这是删除的逻辑
+                //读取文件
+                string jsonStr = File.ReadAllText("./book.json");
+                List<BookInfo> bookList = JsonSerializer.Deserialize<List<BookInfo>>(jsonStr);
+                List<BookInfo> resList = new List<BookInfo>();
+                //BookInfo book = bookList.Find(item => item.BookName == bookInfo.BookName);
+                //遍历bookList
+                bookList.ForEach(item => 
+                {
+                    if (item.BookName != bookInfo.BookName)resList.Add(item);
+                });
+                if (bookList.Count == resList.Count)
+                {
+                    MessageBox.Show("删除失败");
+                    Fn();
+                }
+                jsonStr =JsonSerializer.Serialize(resList, new JsonSerializerOptions()
+                {
+                    WriteIndented = true,
+                    AllowTrailingCommas = true,
+                    Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping
+                });
+                File.WriteAllText("./book.json",jsonStr);
+
+                MessageBox.Show("删除成功");
+                Fn();
+
+
+            }
+            if (e.ColumnIndex.ToString() == "7")
+            {
+                //这是编辑的逻辑
+
+                new BookEdi(bookInfo.Id).ShowDialog();
+                //编辑完成后
+                Fn();
+            }
+        }
+
+        private void Fn()
+        {
             //读取文件
             string jsonStr = File.ReadAllText("./book.json");
             List<BookInfo> bookList = JsonSerializer.Deserialize<List<BookInfo>>(jsonStr);
@@ -56,24 +107,10 @@ namespace homework6
             {
                 Render = (object val, object cel, int index) => "编辑"
             });
-
-            table1.CellClick += Table1_CellClick;
-
         }
 
-        private void Table1_CellClick(object sender, AntdUI.TableClickEventArgs e)
-        {
-            BookInfo bookInfo = (e.Record as BookInfo);
-            if (e.ColumnIndex.ToString() == "6")
-            { 
-                //这是删除的逻辑
-            }
-            if (e.ColumnIndex.ToString() == "7")
-            {
-                //这是编辑的逻辑
 
-                new BookEdi(bookInfo.Id).Show();
-            }
-        }
+
+
     }
 }

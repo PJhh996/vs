@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "gT9G9ZOAIIA=",
+  "success": true,
+  "projectFilePath": "D:\\xinvyang\\Project\\WinForm_Project\\day08\\day08\\day08.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\饭加含\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\饭加含\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.2\\microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\饭加含\\.nuget\\packages\\mysqlconnector\\2.6.2\\mysqlconnector.2.6.2.nupkg.sha512"
+  ],
+  "logs": []
+}
