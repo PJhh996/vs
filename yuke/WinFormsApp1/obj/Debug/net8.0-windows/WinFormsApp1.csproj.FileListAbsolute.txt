@@ -1,6 +1,0 @@
-D:\xinvyang\xiangmu\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Names.resources
-D:\xinvyang\xiangmu\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.csproj.GenerateResource.cache
-D:\xinvyang\xiangmu\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.GeneratedMSBuildEditorConfig.editorconfig
-D:\xinvyang\xiangmu\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.AssemblyInfoInputs.cache
-D:\xinvyang\xiangmu\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.AssemblyInfo.cs
-D:\xinvyang\xiangmu\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.csproj.CoreCompileInputs.cache
