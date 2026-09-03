@@ -39,10 +39,12 @@
             label5 = new AntdUI.Label();
             label6 = new AntdUI.Label();
             label7 = new AntdUI.Label();
-            input6 = new AntdUI.Input();
             inputNumber1 = new AntdUI.InputNumber();
-            checkbox1 = new AntdUI.Checkbox();
-            checkbox2 = new AntdUI.Checkbox();
+            radio1 = new AntdUI.Radio();
+            panel1 = new Panel();
+            radio2 = new AntdUI.Radio();
+            select1 = new AntdUI.Select();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // label1
@@ -80,6 +82,7 @@
             button1.Size = new Size(187, 86);
             button1.TabIndex = 7;
             button1.Text = "注册";
+            button1.Click += button1_Click;
             // 
             // label3
             // 
@@ -137,14 +140,6 @@
             label7.TabIndex = 5;
             label7.Text = "班级：";
             // 
-            // input6
-            // 
-            input6.Location = new Point(309, 435);
-            input6.Name = "input6";
-            input6.PlaceholderText = "请输入班级";
-            input6.Size = new Size(371, 71);
-            input6.TabIndex = 6;
-            // 
             // inputNumber1
             // 
             inputNumber1.Location = new Point(309, 308);
@@ -153,32 +148,49 @@
             inputNumber1.TabIndex = 8;
             inputNumber1.Text = "0";
             // 
-            // checkbox1
+            // radio1
             // 
-            checkbox1.Location = new Point(355, 395);
-            checkbox1.Name = "checkbox1";
-            checkbox1.Size = new Size(112, 34);
-            checkbox1.TabIndex = 9;
-            checkbox1.Text = "男";
+            radio1.Location = new Point(3, 21);
+            radio1.Name = "radio1";
+            radio1.Size = new Size(116, 32);
+            radio1.TabIndex = 9;
+            radio1.Text = "男";
             // 
-            // checkbox2
+            // panel1
             // 
-            checkbox2.Location = new Point(473, 395);
-            checkbox2.Name = "checkbox2";
-            checkbox2.Size = new Size(112, 34);
-            checkbox2.TabIndex = 9;
-            checkbox2.Text = "女";
+            panel1.Controls.Add(radio2);
+            panel1.Controls.Add(radio1);
+            panel1.Location = new Point(309, 371);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(371, 65);
+            panel1.TabIndex = 10;
+            // 
+            // radio2
+            // 
+            radio2.Location = new Point(151, 21);
+            radio2.Name = "radio2";
+            radio2.Size = new Size(116, 32);
+            radio2.TabIndex = 9;
+            radio2.Text = "女";
+            // 
+            // select1
+            // 
+            select1.DropDownArrow = true;
+            select1.Location = new Point(309, 430);
+            select1.Name = "select1";
+            select1.PlaceholderText = "请选择班级";
+            select1.Size = new Size(371, 71);
+            select1.TabIndex = 11;
             // 
             // register
             // 
             AutoScaleDimensions = new SizeF(11F, 24F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(978, 644);
-            Controls.Add(checkbox2);
-            Controls.Add(checkbox1);
+            Controls.Add(select1);
+            Controls.Add(panel1);
             Controls.Add(inputNumber1);
             Controls.Add(button1);
-            Controls.Add(input6);
             Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(label5);
@@ -191,6 +203,7 @@
             Controls.Add(label1);
             Name = "register";
             Text = "register";
+            panel1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -207,9 +220,10 @@
         private AntdUI.Label label5;
         private AntdUI.Label label6;
         private AntdUI.Label label7;
-        private AntdUI.Input input6;
         private AntdUI.InputNumber inputNumber1;
-        private AntdUI.Checkbox checkbox1;
-        private AntdUI.Checkbox checkbox2;
+        private AntdUI.Radio radio1;
+        private Panel panel1;
+        private AntdUI.Radio radio2;
+        private AntdUI.Select select1;
     }
 }

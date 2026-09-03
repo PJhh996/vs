@@ -39,27 +39,33 @@ namespace ClssProject.book
             this.title= title;
             this.Id = id;
             //回显
+            huixian();
+        }
+
+        private async void huixian()//回显方法
+        {
             string sql = "select * from book where id = @id";
-            my.ConAndHandler(sql, cmd => {
+            await my.ConAndHandler(sql, cmd => {
                 //参数填充
-                cmd.Parameters.AddWithValue("@id", id);
+                cmd.Parameters.AddWithValue("@id",Id);
                 MySqlDataReader reader = cmd.ExecuteReader();
                 bool isRead = reader.Read();
                 if (!isRead)
                 {
                     MessageBox.Show(this.title + "失败");
                     this.Close();
-                    return;
+                    return false;
                 }
                 input1.Text = reader.GetString("name");
                 input2.Text = reader.GetString("author");
                 inputNumber1.Text = reader.GetDouble("price").ToString();
-                input4.Text = reader.GetString("label").Replace(" | ","\n");
-
+                input4.Text = reader.GetString("label").Replace(" | ", "\n");
+                return true;
             });
         }
 
-        private void button1_Click(object sender, EventArgs e)
+
+        private async void button1_Click(object sender, EventArgs e)
         {
             //点击按钮  实现新增或编辑
             //获取inp里面的数据
@@ -77,7 +83,7 @@ namespace ClssProject.book
             }          
 
             //调用连接数据库方法  连接后 函数内操作
-            my.ConAndHandler(sql, com => 
+            await my.ConAndHandler(sql, com => 
             { 
                 com.Parameters.AddWithValue("@name", name);
                 com.Parameters.AddWithValue("@author", author);
@@ -94,7 +100,7 @@ namespace ClssProject.book
                 else {
                     MessageBox.Show(this.title+"失败");
                 }
-
+                return true;
             });
 
 

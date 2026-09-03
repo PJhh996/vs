@@ -34,6 +34,7 @@
             input1 = new AntdUI.Input();
             label3 = new AntdUI.Label();
             input2 = new AntdUI.Input();
+            button2 = new AntdUI.Button();
             SuspendLayout();
             // 
             // label1
@@ -50,7 +51,7 @@
             // button1
             // 
             button1.Font = new Font("Microsoft YaHei UI", 22F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            button1.Location = new Point(339, 523);
+            button1.Location = new Point(334, 431);
             button1.Name = "button1";
             button1.Size = new Size(303, 108);
             button1.TabIndex = 4;
@@ -89,11 +90,21 @@
             input2.Size = new Size(423, 100);
             input2.TabIndex = 6;
             // 
+            // button2
+            // 
+            button2.Location = new Point(406, 545);
+            button2.Name = "button2";
+            button2.Size = new Size(161, 45);
+            button2.TabIndex = 7;
+            button2.Text = "注册";
+            button2.Click += button2_Click;
+            // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(11F, 24F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(978, 644);
+            Controls.Add(button2);
             Controls.Add(input2);
             Controls.Add(label3);
             Controls.Add(input1);
@@ -113,5 +124,6 @@
         private AntdUI.Input input1;
         private AntdUI.Label label3;
         private AntdUI.Input input2;
+        private AntdUI.Button button2;
     }
 }

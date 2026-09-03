@@ -24,7 +24,7 @@ namespace ClssProject
         }
 
         // 数据库连接 及其 操作
-        public async void ConAndHandler(string sql, Action<MySqlCommand> handlerCall)
+        public async Task<bool> ConAndHandler(string sql, Func<MySqlCommand,bool> handlerCall)
         {
             //拼接字符串  数据库连接字符串
             ConnStr = $"Server={Server};Port={Port};Database={Database};Uid={Uid};Password={Password};Charset={Charset}";
@@ -33,7 +33,7 @@ namespace ClssProject
                 await conn.OpenAsync();
                 using (MySqlCommand comm = new MySqlCommand(sql,conn))
                 { 
-                    handlerCall(comm);//执行后操作
+                    return handlerCall(comm);//执行后操作
                 }
             }
         }
