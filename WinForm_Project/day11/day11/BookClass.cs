@@ -1,0 +1,85 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Collections.Specialized;
+using System.ComponentModel;
+using System.Text;
+
+namespace day11
+{
+    internal class BookClass : INotifyPropertyChanged
+    {
+        //国定写法，实现INotifyPropertyChanged 中的 接口属性
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        private int _Id { get; set; }
+        public int Id
+        {
+            get
+            {
+                return _Id;
+            }
+            set
+            {
+                _Id = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Id)));
+            }
+        }
+
+
+        private string _Name { get; set; }
+        public string Name
+        {
+            get
+            {
+                return _Name;
+            }
+            set
+            {
+                _Name = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Name)));
+            }
+        }
+        private double _Price { get; set; }
+        public double Price
+        {
+            get
+            {
+                return _Price;
+            }
+            set
+            {
+                _Price = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Price)));
+            }
+        }
+        private bool _isBorrow { get; set; }
+        public bool isBorrow
+        {
+            get
+            {
+                return _isBorrow ;
+            }
+            set
+            {
+                _isBorrow  = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(isBorrow )));
+            }
+        }
+
+        public BookClass()
+        { 
+        
+        }
+
+        public BookClass(int id ,string name,double price,bool isborrow)
+        { 
+            Id = id;    
+            Name = name;
+            Price = price;
+            isBorrow = isborrow; 
+        }
+
+
+
+    }
+}

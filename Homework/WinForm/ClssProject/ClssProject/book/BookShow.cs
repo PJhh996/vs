@@ -47,19 +47,19 @@ namespace ClssProject.book
             }
             else if (e.Btn.Text == "借书" || e.Btn.Text == "还书")
             {
-                borrowReturn(e.Btn.Text, book["name"].ToString(),book["id"].ToString(),book["is_borrow"].ToString());
+                borrowReturn(e.Btn.Text, book["name"].ToString(), book["id"].ToString(), book["is_borrow"].ToString());
             }
 
         }
 
-        private async void borrowReturn(string obj,string name,string id,string isborrow)
+        private async void borrowReturn(string obj, string name, string id, string isborrow)
         {
             if (obj == "借书" && isborrow == "1")
             {
                 MessageBox.Show($"《{name}》已被人借走");
                 return;
             }
-            if (obj == "还书" && isborrow == "2") 
+            if (obj == "还书" && isborrow == "2")
             {
                 MessageBox.Show($"《{name}》还在书库里");
                 return;
@@ -71,14 +71,15 @@ namespace ClssProject.book
             {
                 string oneOrtwo = isborrow == "1" ? "2" : "1";//等于1就换成2，等于2就换成1
                 cmd.Parameters.AddWithValue("@id", id);
-                cmd.Parameters.AddWithValue("@is_borrow",oneOrtwo);
+                cmd.Parameters.AddWithValue("@is_borrow", oneOrtwo);
                 int row = cmd.ExecuteNonQuery();
                 if (row > 0)
                 {
-                    MessageBox.Show( $"《{name}》成功"+obj);
+                    MessageBox.Show($"《{name}》成功" + obj);
                     showBook();
                 }
-                else {
+                else
+                {
                     MessageBox.Show($"《{name}》{obj}失败");
                 }
 
@@ -105,7 +106,8 @@ namespace ClssProject.book
                     MessageBox.Show("删除成功！");
                     showBook();
                 }
-                else {
+                else
+                {
                     MessageBox.Show("删除失败");
                 }
 
@@ -218,7 +220,7 @@ namespace ClssProject.book
                 //handlerCol.Render = (object val, object cel, int index) => "删除 | 编辑";
                 //table1.Columns.Add(handlerCol);
 
-                var handlerButton = new AntdUI.Column("handler","操作");
+                var handlerButton = new AntdUI.Column("handler", "操作");
                 handlerButton.SetAlign();
                 handlerButton.Render = (object val, object cel, int index) =>
                 {
@@ -230,15 +232,15 @@ namespace ClssProject.book
                 };
                 table1.Columns.Add(handlerButton);
 
-                var borrowButton = new AntdUI.Column("isborrow","是否借阅").SetAlign();//SetAlifn()让表头里面的内容居中
+                var borrowButton = new AntdUI.Column("isborrow", "是否借阅").SetAlign();//SetAlifn()让表头里面的内容居中
                 borrowButton.Render = (object val, object cel, int index) =>
                 {
-                    return new AntdUI.CellLink[] { 
+                    return new AntdUI.CellLink[] {
                         new AntdUI.CellButton("borrow","借书",AntdUI.TTypeMini.Default),
                         new AntdUI.CellButton("return","还书",AntdUI.TTypeMini.Default)
                     };
                 };
-                table1.Columns.Add (borrowButton);
+                table1.Columns.Add(borrowButton);
                 return true;
             });
         }
