@@ -11,6 +11,8 @@ namespace day12
 {
     public partial class Form2 : Form
     {
+        //Class1 Radius = new Class1();
+
         //实例化定时器对象
         private System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
         private int Num = 0;
@@ -29,7 +31,7 @@ namespace day12
         {
             //获取秒数
             Num = DateTime.Now.Second;
-            panel1 .Invalidate();
+            panel1.Invalidate();
         }
         private int Radius = 100;
         private int RadiusX = 150;
@@ -56,8 +58,8 @@ namespace day12
                     var startX = Math.Cos((360 / Count) * i * Math.PI / 180) * Radius + RadiusX;
                     var startY = Math.Sin((360 / Count) * i * Math.PI / 180) * Radius + RadiusY;
                     var endX = Math.Cos((360 / Count) * i * Math.PI / 180) * (Radius - tmpLong) + RadiusX;
-                    var endY = Math.Sin((360 / Count) * i * Math.PI / 180) * (Radius - tmpLong) + RadiusY;
-                    g.DrawLine(penBlack,(int)startX, (int)startY, (int)endX, (int)endY);
+                    var endY = Math.Sin((360 / Count) * i * Math.PI / 180) * (Radius - tmpLong)+ RadiusY;
+                    g.DrawLine(penBlack, (int)startX, (int)startY, (int)endX, (int)endY);
                     tmpLong = LongScale;
                 }
                 using (Pen penRed = new Pen(Color.Red, 4))
@@ -66,7 +68,6 @@ namespace day12
                     var endY = Math.Sin(((360 / Count) * Num + 270) * Math.PI / 180) * (Radius - tmpLong) + RadiusY;
                     g.DrawLine(penRed, RadiusX, RadiusY, (int)endX, (int)endY);
                 }
-
 
             }
         }
