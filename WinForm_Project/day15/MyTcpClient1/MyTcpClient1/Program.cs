@@ -1,4 +1,4 @@
-namespace day12
+namespace MyTcpClient1
 {
     internal static class Program
     {
@@ -11,9 +11,7 @@ namespace day12
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            //Application.Run(new Form1());
-            //Application.Run(new Form2());
-            Application.Run(new Form5());
+            Application.Run(new Form1());
         }
     }
 }
