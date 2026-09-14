@@ -1,0 +1,5 @@
+今天存的都是 CogJob.vpp 不是QuickBuild 应用程序
+
+还有一个是C# Winform 窗体代码
+
+骰子计数方案.vpp  是 CogToolblock 方案

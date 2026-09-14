@@ -36,11 +36,73 @@ namespace homework8
             //设定 记录数据 定时器
             DataTimer = new System.Windows.Forms.Timer();
             DataTimer.Interval = 500;
-            DataTimer.Tick += DataRecorde;
+            DataTimer.Tick += DataRecorde; 
             // 温度表绘制
             panel8.Paint += TempPaint;
+
+            //禁用UI
+            closeBtn.Enabled = false;
+            startBtn.Enabled = false;
+            stopBtn.Enabled = false;
+            inpSetTempTb.Enabled = false;
+            setTempBtn.Enabled = false;
+
+            //绑定按钮点击事件
+            connectBtn.Click += ConnectPLC;//连接PLC按钮
         }
 
+        //点击连接按钮 连接PLC
+        private async void ConnectPLC(object? sender, EventArgs e)
+        {
+            //连接PLC方法
+            if (Master != null) return;
+            try
+            {
+                //创建串口，打开串口，创建主站对象；写入寄存器数据（初始值），设置禁用UI
+                //串口名称、波特率、校验位、数据位、停止位 ==> "COM1",9600,Parity.None,8,StopBits.One
+                MyPort = new SerialPort("COM1",9600,Parity.None,8,StopBits.One); //创建窗口通信对象
+                MyPort.Open();//打开串口
+                Master = ModbusSerialMaster.CreateRtu(MyPort);//创建主站对象
+                Master.Transport.ReadTimeout = 2000;//读超时
+                Master.Transport.Retries = 3; // 重试次数
+
+                // 初始化设置 从站寄存器，
+                // 0-设备状态 1-设定温度 2-实际采集温度 3-故障码
+                //寄存器地址1 是设定温度，是通过输入框 输入后设定的
+                await Master.WriteSingleRegisterAsync(1,0,0);
+                await Master.WriteSingleRegisterAsync(1,2,30);//我们写代码拟定的基础温度
+                await Master.WriteSingleRegisterAsync(1,3,0);
+                Console.WriteLine("===设备连接(PLC)成功===");
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show($"设备连接失败-{err.Message}");
+                return;
+            }
+            //设置UI
+            closeBtn.Enabled = true;
+            inpSetTempTb.Enabled=true;
+            setTempBtn.Enabled=true;
+            connectBtn.Enabled=false;
+
+            //连接成功 修改状态
+            label7.Text = "当前状态：已连接";
+            //日志输出 方法
+            WriteLog("连接设备成功，开始采集");
+        }
+
+        //日志输出 方法
+        private void WriteLog(string msg)
+        {
+            //创建label
+            Label lab = new Label();
+            lab.Text = DateTime.Now.ToString() + " " + msg;
+            lab.AutoSize = true;
+            lab.ForeColor = msg.Contains("警告") ? Color.Red : Color.Black;
+            flowLayoutPanel1.Controls.Add(lab);
+        }
+
+        //温度表绘制
         private void TempPaint(object? sender, PaintEventArgs e)
         {
             // 获取画图对象
@@ -120,7 +182,7 @@ namespace homework8
         }
 
 
-
+        //设置表头
         private void SetDataColumns()
         {
             //新建一个数据源
