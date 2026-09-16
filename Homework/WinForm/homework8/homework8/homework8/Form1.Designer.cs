@@ -314,7 +314,7 @@
             label5.Name = "label5";
             label5.Size = new Size(504, 36);
             label5.TabIndex = 0;
-            label5.Text = "日志输出区";
+            label5.Text = "数据记录区";
             label5.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // button1
@@ -341,7 +341,7 @@
             // 
             AutoScaleDimensions = new SizeF(11F, 24F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1392, 876);
+            ClientSize = new Size(1301, 730);
             Controls.Add(panel4);
             Controls.Add(panel5);
             Controls.Add(panel3);

@@ -8,7 +8,7 @@ namespace homework8
     public partial class Form1 : Form
     {
         //定义数据
-        private BindingList<DeviceTempRecord> DTRs = new ();// 数据表格 的数据源
+        private BindingList<DeviceTempRecord> DTRs = new();// 数据表格 的数据源
         private SerialPort MyPort;//需要下载第三方包 System.IO.Port 串口对象
         private IModbusSerialMaster Master; // 主站 串口
         private System.Windows.Forms.Timer TempTimer; // 温度变化定时器（模拟温度变化）
@@ -31,12 +31,12 @@ namespace homework8
             //设定 定时器
             TempTimer = new System.Windows.Forms.Timer();
             TempTimer.Interval = 400;
-            TempTimer.Tick += moniTemp;
+            TempTimer.Tick += MoniTemp;
 
             //设定 记录数据 定时器
             DataTimer = new System.Windows.Forms.Timer();
             DataTimer.Interval = 500;
-            DataTimer.Tick += DataRecorde; 
+            DataTimer.Tick += DataRecorde;
             // 温度表绘制
             panel8.Paint += TempPaint;
 
@@ -49,7 +49,51 @@ namespace homework8
 
             //绑定按钮点击事件
             connectBtn.Click += ConnectPLC;//连接PLC按钮
+            setTempBtn.Click += SetTemp;// 设定温度按钮
+            startBtn.Click += StartDevice; // 启动设备按钮
         }
+
+        private async void StartDevice(object? sender, EventArgs e)
+        {
+            //点击启动按钮
+            //记录数据定时器 开启 数据记录区表格刷新
+            //温度变化定时器 开启 模拟现实 中的温度变化
+            TempTimer.Start();
+            DataTimer.Start();
+            //修改 从站寄存器 设备状态
+            await Master.WriteSingleRegisterAsync(1, 0, 1);
+            //禁用UI
+            stopBtn.Enabled = true;
+            startBtn.Enabled = false;
+            //更新日志
+            WriteLog("设备置运行状态");
+
+            Console.WriteLine("======设备运行======");
+        }
+
+        //设定温度事件
+        private async void SetTemp(object sender, EventArgs e)
+        {
+            //获取 输入框 内容
+            //校验 设定温度是否符合要求
+            if (!int.TryParse(inpSetTempTb.Text, out int setTemp) || setTemp > 400 || setTemp < 0)
+            {
+                MessageBox.Show("输入设定温度有误！");
+                return;
+            }
+            //将 设定温度 写入寄存器
+            await Master.WriteSingleRegisterAsync(1, 1, (ushort)setTemp);
+            //禁用UI
+            setTempBtn.Enabled = false;
+            inpSetTempTb.Enabled = false;
+            startBtn.Enabled = true;
+            //修改 监控画面区 实际温度显示
+            settempLab.Text = $"设定温度：{setTemp}℃";
+            //更新日志
+            WriteLog($"设置目标温度：{setTemp}℃");
+
+        }
+
 
         //点击连接按钮 连接PLC
         private async void ConnectPLC(object? sender, EventArgs e)
@@ -60,7 +104,7 @@ namespace homework8
             {
                 //创建串口，打开串口，创建主站对象；写入寄存器数据（初始值），设置禁用UI
                 //串口名称、波特率、校验位、数据位、停止位 ==> "COM1",9600,Parity.None,8,StopBits.One
-                MyPort = new SerialPort("COM1",9600,Parity.None,8,StopBits.One); //创建窗口通信对象
+                MyPort = new SerialPort("COM1", 9600, Parity.None, 8, StopBits.One); //创建窗口通信对象
                 MyPort.Open();//打开串口
                 Master = ModbusSerialMaster.CreateRtu(MyPort);//创建主站对象
                 Master.Transport.ReadTimeout = 2000;//读超时
@@ -69,9 +113,9 @@ namespace homework8
                 // 初始化设置 从站寄存器，
                 // 0-设备状态 1-设定温度 2-实际采集温度 3-故障码
                 //寄存器地址1 是设定温度，是通过输入框 输入后设定的
-                await Master.WriteSingleRegisterAsync(1,0,0);
-                await Master.WriteSingleRegisterAsync(1,2,30);//我们写代码拟定的基础温度
-                await Master.WriteSingleRegisterAsync(1,3,0);
+                await Master.WriteSingleRegisterAsync(1, 0, 0);//第一个参数是从站的地址
+                await Master.WriteSingleRegisterAsync(1, 2, 30);//我们写代码拟定的基础温度
+                await Master.WriteSingleRegisterAsync(1, 3, 0);
                 Console.WriteLine("===设备连接(PLC)成功===");
             }
             catch (Exception err)
@@ -81,9 +125,9 @@ namespace homework8
             }
             //设置UI
             closeBtn.Enabled = true;
-            inpSetTempTb.Enabled=true;
-            setTempBtn.Enabled=true;
-            connectBtn.Enabled=false;
+            inpSetTempTb.Enabled = true;
+            setTempBtn.Enabled = true;
+            connectBtn.Enabled = false;
 
             //连接成功 修改状态
             label7.Text = "当前状态：已连接";
@@ -171,14 +215,74 @@ namespace homework8
             }
         }
 
-        private void DataRecorde(object sender, EventArgs e)
+
+        //
+        private async void DataRecorde(object sender, EventArgs e)
         {
-            
+            //记录数据变化
+            //去从站 寄存器中获取 当前数据
+            ushort[] ResArr = await Master.ReadHoldingRegistersAsync(1, 0, 4);//四个数据全要
+            //记录数据 到表中
+            //实例化创建 DeviceTempRecord 对象并添加到 DTRs的list中
+            DeviceTempRecord DTR = new DeviceTempRecord(ResArr);
+            DTRs.Add(DTR);
+            //记录到表中 ，利用计数器，每过3000毫秒，记录一次，也就是计数器触发6次时记录一次
+            RecordDataBase++;
+            if (RecordDataBase == 6)
+            {
+                //dataGridView1
+            }
+
+
         }
 
-        private void moniTemp(object sender, EventArgs e)
+        //模拟 温度变化 定时器
+        private async void MoniTemp(object sender, EventArgs e)
         {
-            
+            //定时器启动
+            //温度变化写入 寄存器
+            //温度变化在 监控画面区 动态显示
+            //模拟最高温度为150度
+            // 温度模拟逻辑设定: 到达150度后温度下降,下降到30度后升温, 升降温都1度1度来
+            //获取 寄存器中的 数据
+            ushort[] Temps = Master.ReadHoldingRegisters(1, 1, 2);//从站地址1，从寄存器下标1，开始拿到2个寄存器数据
+            ushort CurrTemp = Temps[1];//当前温度
+            //判断当前是升温还是 降温
+            if (isHeating)
+            {
+                CurrTemp++;
+                if (CurrTemp >= 150)
+                {
+                    CurrTemp = 150;
+                    isHeating = false;
+                }
+            }
+            else
+            {
+                CurrTemp--;
+                if (CurrTemp <= 30)
+                {
+                    CurrTemp = 30;
+                    isHeating = true;
+                }
+            }
+            //判断 发生 超温还是  故障已消除
+            if (Temps[0] == Temps[1])
+            {
+                string str = isHeating ? $"【警告】发生超温故障，实际温度={Temps[1]}，目标温度={Temps[0]}" : "超温故障已消除";
+                //更新日志
+                WriteLog(str);
+                //设备状态 写回寄存器
+                Master.WriteSingleRegister(1, 0, isHeating ? (ushort)2 : (ushort)1);
+                Master.WriteSingleRegister(1, 3, isHeating ? (ushort)1 : (ushort)0);
+            }
+            //实际温度显示 监控画面区
+            tempLab.Text = "实时温度" + CurrTemp + "℃";
+            //将 实际温度写入 寄存器
+            Master.WriteSingleRegister(1, 2, CurrTemp);
+            //重新绘制 温度表
+            panel8.Invalidate();
+
         }
 
 
@@ -232,7 +336,7 @@ namespace homework8
                 {
                     Alignment = DataGridViewContentAlignment.MiddleCenter//居中对齐
                 }
-            }); 
+            });
             dataGridView1.Columns.Add(new DataGridViewTextBoxColumn()//给表格新增一列
             {
                 DataPropertyName = "FaultCode",//数据源 名字
