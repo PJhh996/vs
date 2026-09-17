@@ -51,9 +51,54 @@ namespace homework8
             connectBtn.Click += ConnectPLC;//连接PLC按钮
             setTempBtn.Click += SetTemp;// 设定温度按钮
             startBtn.Click += StartDevice; // 启动设备按钮
+            stopBtn.Click += StopDevice; // 停止设备按钮
+            closeBtn.Click += ClosePLC; // 断开连接按钮
         }
 
-        private async void StartDevice(object? sender, EventArgs e)
+        private void ClosePLC(object? sender, EventArgs e)
+        {
+            //停止所有 定时器
+            TempTimer.Stop();
+            DataTimer.Stop();
+            //断开串口连接
+            MyPort.Close();
+            MyPort = null;//引用清空,主站销毁
+            Master = null;
+            // 设置禁用UI
+            closeBtn.Enabled = false; // 断开PLC按钮
+            startBtn.Enabled = false;   // 启动设备按钮
+            stopBtn.Enabled = false;    // 设备停止按钮
+            inpSetTempTb.Enabled = false;  // 输入设定温度
+            setTempBtn.Enabled = false; // 设定温度按钮
+            connectBtn.Enabled = true;
+            // 修改连接状态
+            label7.Text = "当前状态: 未连接";
+            label7.ForeColor = Color.Black;
+            // 写日志
+            WriteLog("断开设备,停止采集");
+            Console.WriteLine("---断开(关闭)PLC---");
+
+        }
+
+        //停止设备
+        private async void StopDevice(object sender, EventArgs e)
+        {
+            //停止设备方法
+            // 停止 模拟温度 定时器
+            TempTimer.Stop();
+            //禁用UI
+            startBtn.Enabled = true;
+            inpSetTempTb.Enabled = true;
+            setTempBtn.Enabled = true;
+            stopBtn.Enabled = false;
+            //修改 寄存器状态寄存器中
+            await Master.WriteSingleRegisterAsync(1,0,0);
+            //更新日志
+            WriteLog("设备置待机状态");
+            Console.WriteLine("======设备停止======");
+        }
+
+        private async void StartDevice(object sender, EventArgs e)
         {
             //点击启动按钮
             //记录数据定时器 开启 数据记录区表格刷新
@@ -230,7 +275,7 @@ namespace homework8
             RecordDataBase++;
             if (RecordDataBase == 6)
             {
-                //dataGridView1
+                //将记录写进 数据库中
             }
 
 
